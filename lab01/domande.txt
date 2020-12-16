@@ -1,0 +1,28 @@
+github.com/akappakappa
+
+DOMANDE:
+1. What are the two parts of a class?
+2. What is the difference between the interface and the implementation in a class?
+3. Why is a constructor used for the Date type instead of an init_day() function?
+4. What is an invariant? Give examples.
+5. When should functions be put in the class definition, and when should they be defined outside the class? Why?
+
+RISPOSTE:
+1. Le classi sono divise in due parti:
+    > public (accessibile dall'esterno, contenente di solito le funzioni membro).
+    > private (variabili il cui accesso non è garantito direttamente, ma attraverso le funzioni membro, oppure funzioni che non devono essere accessibili pubblicamente).
+
+2. L'interfaccia dichiara le funzioni membro, senza implementarle, e le variabili, senza inizializzarle.
+    È buona pratica di programmazione definire l'implementazione delle classi e l'inizializzazione delle variabili (tramite costruttore) all'esterno della classe stessa.
+    L'implementazione consiste nella scrittura dello specifico codice di comportamento delle funzioni membro.
+
+3. Perchè il costruttore consente la creazione di un oggetto.
+    Ogni oggetto associa alle variabili private dei valori specifici dell'oggetto stesso, diversi per un altro oggetto.
+    La funzione init_day() inizializzerebbe le variabili in modo univoco.
+
+4. Un invariante di classe è una condizione booleana che definisce una regola per la validità dei valori dello stato.
+    Queste garantiscono che l'oggetto sia sempre in uno stato valido.
+    Ad esempio month >= 1 && month <= 12.
+
+5. La definizione delle funzioni all'interno della classe avviene solitamente per classi brevi, con poche funzioni membro, le quali richiedono poche righe di codice per essere implementate.
+    In un progetto di dimensioni ridotte questa pratica snellisce il codice.

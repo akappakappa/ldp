@@ -1,0 +1,23 @@
+Es. 2
+
+Write a function print() that prints a vector of ints to cout. Give it two arguments: a string for "labeling" the output and a vector.
+
+
+Es. 3
+
+Create a vector of Fibonacci numbers and print them using the function from exercise 2. To create the vector, write a function, fibonacci(x, y, v, n), where integers x and y are ints, v is an empty vector<int>, and n is the number of elements to put into v; v[0] will be x and v[1] will be y. A Fibonacci number is one that is part of a sequence where each element is the sum of two previous ones. For example, starting with 1 and 2, we get 1, 2, 3, 5, 8, 13, 21, .... Your fibonacci() function should make such a sequence starting with its x and y arguments.
+
+
+Es. 4
+
+An int can hold integers only up to a maximum number. Find an approximation of that maximum number by using fibonacci().
+
+
+Es. 5
+
+Write two functions that reverse the order of elements in a vector<int>. For example, 1, 3, 5, 7, 9 becomes 9, 7, 5, 3, 1. The first reverse function should produce a new vector with the reversed sequence, leaving its original vector unchanged. The other reverse function should reverse the elements of its vector without using any other vectors.
+
+
+Es. 6
+
+Design and implement a Name_pairs class holding (name, age) pairs where name is a string and age is a double. Represent that as a vector<string> (called name) and a vector<double> (called age) member. Provide an input operation read_names() that reads a series of names (you can choose how to stop the input series). Provide a read_ages() operation that prompts the user for an age for each name, Provide a print() operation that prints out the (name[i], age[i]) pairs (one per line) in the order determined by the name vector.

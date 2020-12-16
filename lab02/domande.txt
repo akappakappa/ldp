@@ -1,0 +1,14 @@
+github.com/akappakappa
+
+DOMANDE:
+1. What is a dereference operator and why do we need one?
+2. Read the exercise #1 - Why would people want to use a Rational class?
+
+RISPOSTE:
+1. Un dereference operator è il simbolo * di un puntatore.
+    Se usato nella dichiarazione (es. string* p) crea una variabile puntatore.
+    Se non usato nella dichiarazione funziona da dereference operator.
+
+2. Si usa la classe Rational per gestire i numeri razionali sotto forma di frazione, non con la virgola.
+    Uno dei vantaggi potrebbe essere la formattazione dell'output.
+    Oppure per evitare la perdita di precisione dei decimali, se la necessità è un'alta precisione.

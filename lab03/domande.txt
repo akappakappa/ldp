@@ -1,0 +1,30 @@
+github.com/akappakappa
+
+DOMANDE:
+1. What is a dereference operator and why do we need one?
+2. What is an address? How are memory addresses manipulated in C++?
+3. What information about a pointed-to object does a pointer have? What useful information does it lack?
+4. What can a pointer point to?
+5. When do we need a pointer (instead of a reference or a named object)?
+6. What is a destructor? When do we want one?
+
+RISPOSTE:
+1. Un dereference operator è il simbolo * di un puntatore.
+    Se usato nella dichiarazione (es. string* p) crea una variabile puntatore.
+    Se non usato nella dichiarazione funziona da dereference operator.
+
+2. Quando viene creata una variabile, viene assegnato un indirizzo di memoria ad essa.
+    Quando la variabile è inizializzata il valore viene salvato in quell'indirizzo.
+    Si può accedere ad un indirizzo con un puntatore.
+
+3. Il puntatore a un oggetto punta al primo byte in memoria occupato da esso.
+    Il puntatore quindi non fornisce informazioni sulla dimensione dell'oggetto o sugli oggetti successivi.
+    È ilprogrammatore che deve occuparsi di questo aspetto.
+
+4. Un puntatore punta ad un indirizzo di memoria.
+
+5. I pointer sono utilizzati per passare una variabile (eventualmente null), impedendone la modifica.
+
+6. Il distruttore è una funzione membro che permette di cancellare un oggetto, ovvero non riservare più la memoria ad esso associato.
+    Quando l'oggetto esce dallo scope il distruttore viene chiamato.
+    In alternativa si può utilizzare esplicitamente delete.

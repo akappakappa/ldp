@@ -1,0 +1,25 @@
+Andrea Valentinuzzi matr. 1219617
+
+DOMANDE:
+1. What is a template?
+2. How can you make a class abstract?
+3. What is a virtual function and how does it differ from a non-virtual function?
+4. What is a base class?
+5. What makes a class derived?
+6. How does a pure virtual function differ from other virtual functions?
+7. What does overriding mean?
+
+RISPOSTE:
+1. È una feature di c++ che permette la creazione di tipi generici.
+
+2. Con l'utilizzo della keyword virtual.
+
+3. Una funzione virtual può essere sovrascritta da una classe derivata.
+
+4. La base class è la classe da cui derivano altre classi, ma non deriva da altre.
+
+5. Una classe è derivata quando eredita metodi e variabili da un'altra classe.
+
+6. Una pure virtual function è una funzione che è solamente dichiarata nella base class.
+
+7. Override significa sovrascrivere il comportamento di una funzione membro in una derived class.
