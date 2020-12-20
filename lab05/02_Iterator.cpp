@@ -7,6 +7,7 @@ class Iterator
 {
 public:
     virtual double* next() = 0;
+    virtual int get_size() = 0;
 };
 
 class Vector_iterator : public Iterator
@@ -22,6 +23,8 @@ public:
             return &v.at(i++);
         return 0;
     }
+    int get_size() override
+    { return v.size(); }
 };
 
 class List_iterator : public Iterator
@@ -37,7 +40,16 @@ public:
             return &*i++;
         return 0;
     }
+    int get_size() override
+    { return l.size(); }
 };
+
+void print(Iterator &itr)
+{
+    for (int i = 0; i < itr.get_size(); i++)
+        cout << *itr.next() << " ";
+    cout << endl;
+}
 
 int main()
 {
@@ -47,12 +59,9 @@ int main()
     Vector_iterator v(a);
     List_iterator l(b);
 
-    // testing function
-    for (int i = 0; i < a.size(); i++)
-        cout << *v.next() << " ";
-    cout << endl;
-    for (int i = 0; i < b.size(); i++)
-        cout << *l.next() << " ";
-    cout << endl;
+    // testing functions
+    print(v);
+    print(l);
+    
     return 0;
 }
