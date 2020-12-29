@@ -1,3 +1,13 @@
+/**
+ * @file 01_Template.cpp
+ * @author github.com/akappakappa
+ * @brief Template class
+ * @date 2020-12-16
+ * 
+ * Write a template function f() that adds the elements of one vector<T> to the elements of another; \n
+ * for example, f(v1, v2) should do v1[i] += v2[i] for each element of v1.
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

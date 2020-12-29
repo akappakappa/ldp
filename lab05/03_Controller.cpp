@@ -1,3 +1,16 @@
+/**
+ * @file 03_Controller.cpp
+ * @author github.com/akappakappa
+ * @brief Controller class
+ * @date 2020-12-16
+ * 
+ * Define a class Controller with four virtual functions on(), off(), set_level(int) and show(). \n
+ * Derive at least two classes from Controller. One should be a simple test class \n
+ * where show() prints out whether the class is set to on or off and what is the current level. \n
+ * The second derived class should somehow control the line color of a Shape; \n
+ * the exact meaning of “level” is up to you.
+ */
+
 #include <iostream>
 using namespace std;
 

@@ -1,3 +1,17 @@
+/**
+ * @file 02_Iterator.cpp
+ * @author github.com/akappakappa
+ * @brief Iterator class
+ * @date 2020-12-16
+ * 
+ * Define a class Iterator with a pure virtual function next() that returns a double*. \n
+ * Now derive Vector_iterator and List_iterator from Iterator so that next() for a vector iterator \n
+ * yields a pointer to the next element of a vector<double> and List_iterator does the same for a list<double>. \n
+ * You initialize a Vector_iterator with a vector<double> and the first call of next() yields a pointer to its first element, if any. \n
+ * If there is no next element, return 0. \n
+ * Test this by using a function void print(Iterator&) to print the elements of a vector<double> and a list<double>.
+ */
+
 #include <iostream>
 #include <vector>
 #include <list>
